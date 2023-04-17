@@ -317,8 +317,10 @@ ul, ol,a{
 }
 .submenu{
     display: flex;
-    justify-content: space-evenly;
-    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
 .submenu a{
     color: black;
@@ -326,6 +328,13 @@ ul, ol,a{
     padding: 5px 5px;
     border-radius: 5px;
     gap: 10px;
+}
+@media(min-width: 768px){
+    .submenu{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
 }
 
  /* Footer */
