@@ -1,0 +1,353 @@
+*{
+    margin:0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+
+/* Titulo principal */
+h1,h2{
+text-align: center;
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+}
+h1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* main en general */
+main, footer{
+    margin: 25px;
+}
+
+/* Fuentes de los parrafos */
+p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+}
+h3, h4, h5, h6{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+/* Listas */
+ul, ol,a{
+    list-style-type:none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-decoration:none;
+    color: white;
+}
+
+
+ /*Header */
+ header{
+    /* background-image:url(../img/el-unico-club-de-la-ciudad-2.jpg); */
+    background-color: rgb(255, 0, 43);
+    height: 245px;
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    gap: 20px;
+ }
+
+ nav{
+    background-color: rgba(0, 0, 0,0.4);
+ }
+
+.orden1{
+    order:1;
+}
+
+ .menu{
+    /* border-radius: 5px; */
+    /* background-color: rgba(84, 84, 84, 0.853) ; */
+    margin: 20px;
+    padding: 0px 10px;
+ }
+
+ .menu a:hover{
+    background-color: white;
+    color: black;
+ }
+
+ @media (min-width: 768px){
+    header{
+        height: 250px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .orden1{
+        order:0;
+    }
+    ul, li, a {
+        display: flex;
+        flex-direction: row;
+        gap: 90px;
+    }
+    .menu{
+        margin: 10px 0;
+        padding: 0px 10px;
+    }
+ }
+
+
+ @media (min-width: 992px ){
+    ul, li, a {
+        gap: 150px;
+    }
+ }
+
+ /* Index */
+ .historia{
+    display: grid;
+    grid-template-columns: 1fr;
+ }
+
+ @media (min-width: 768px){
+    .historia{
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+        justify-items:flex-start;
+    }
+ }
+
+.campanas{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+}
+
+@media (min-width: 768px){
+    .campanas{
+        grid-template-areas: 
+        "pi1 pi1"
+        "pi2 pi3"
+        "pi4 pi4";
+        justify-items: stretch;
+        column-gap: 20px;
+        row-gap: 15px;
+    }
+    .pi1{
+        grid-area: pi1;
+    }
+    .pi2{
+        grid-area: pi2;
+        width: 400px;
+    }
+    .pi3{
+        grid-area: pi3;
+        align-self: flex-start;
+    }
+    .pi4{
+        grid-area: pi4;
+    }
+}
+
+@media (min-width: 992px){
+    .campanas{
+        grid-template-areas: 
+        "pi1 pi1 pi1"
+        "pi2 pi3 pi3"
+        "pi4 pi4 pi4";
+        align-items: center;
+        max-width: 65%;
+        column-gap: 30px;
+        padding: 0px 20%;
+    }
+    .pi3{
+        justify-self: start;
+        width: 300px;
+    }
+}
+
+.texto-parallax{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+	font-size: 5rem;
+	font-weight: bold;
+	position: absolute;
+	text-align: center;
+	top: 100%;
+	width: 100%;
+}
+
+.parallax{
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height:15rem;
+	max-width: 100%;
+	position: relative
+}
+
+.img-uno{
+    background-image: url(../img/galeria/el-unico-club-de-la-ciudad-2.jpg);
+    margin: 50px 0;
+}
+
+.img-dos{
+    background-image: url(../img/galeria/tano-gol.jpg);
+    margin: 50px 0;
+}
+
+
+ /* Cancionero */
+ .cancion{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+ }
+
+ .cancion p{
+    text-align: center;
+    width: 300px;
+    padding: 50px;
+ }
+
+ .cancion h3{
+    margin-top: 50px;
+ }
+
+ .cancion iframe{
+    width: 300px;
+    height: 150px;
+ }
+ 
+ @media(min-width: 768px){
+    .cancio p{
+        width: 350px;
+    }
+    .cancion iframe{
+        width: 560px;
+        height: 315px;
+    }
+ }
+
+ /* Galeria de fotos */
+.fotos{
+    display: grid;
+    row-gap: 15px;
+    justify-items: center;
+    align-items: center;
+}
+
+.fotos img{
+    height: 300px;
+}
+
+@media(min-width: 768px){
+    .fotos{
+        grid-template-areas: 
+        "foto1 foto1 foto5 foto5"
+        "foto1 foto1 foto5 foto5"
+        "foto3 foto3 foto10 foto10"
+        "foto4 foto4 foto4 foto4"
+        "foto2 foto2 foto6 foto6"
+        "foto2 foto2 foto6 foto6"
+        "foto8 foto8 foto7 foto7"
+        "foto8 foto8 foto9 foto9"
+        "foto8 foto8 foto9 foto9"
+        "foto12 foto12 foto11 foto11";
+        column-gap: 15px;
+    }
+    .fotos img{
+        height: 100%;
+    }
+    .foto1{
+        grid-area: foto1;
+    }
+    .foto2{
+        grid-area: foto2;
+    }
+    .foto3{
+        grid-area: foto3;
+    }
+    .foto4{
+        grid-area: foto4;
+    }
+    .foto5{
+        grid-area: foto5;
+    }
+    .foto6{
+        grid-area: foto6;
+    }
+    .foto7{
+        grid-area: foto7;
+    }
+    .foto8{
+        grid-area: foto8;
+    }
+    .foto9{
+        grid-area: foto9;
+    }
+    .foto10{
+        grid-area: foto10;
+    }
+    .foto11{
+        grid-area: foto11;
+    }
+    .foto12{
+        grid-area: foto12;
+    }
+}
+
+/* Contacto */
+
+    form{
+        margin: 25px;
+    }
+
+/* Plantel */
+.img-tres{
+    background-image: url(../img/escudo3.jfif);
+    margin: 50px 0;
+    color: black;
+}
+.submenu{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.submenu a{
+    color: black;
+    background-color: rgba(132, 137, 74,0.9);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+ /* Footer */
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-end;
+    background-color: rgb(91, 101, 113);
+    margin: 0;
+}
+footer iframe{
+    margin: 10px;
+    padding: 10px;
+}
+
+.redes{
+    display: flex;
+    gap: 20px;
+}
+.redes img{
+    width: 50px;
+    height: 50px;
+}
+footer h3,footer h5,footer h6{
+    color: white;
+}
