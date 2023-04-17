@@ -323,8 +323,9 @@ ul, ol,a{
 .submenu a{
     color: black;
     background-color: rgba(132, 137, 74,0.9);
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 5px;
+    gap: 10px;
 }
 
  /* Footer */
