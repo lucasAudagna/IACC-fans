@@ -232,6 +232,23 @@ justify-content: flex-start;
     margin: 50px 0;
 }
 
+.img-fix{
+    background-image: url(../img/galeria/formacion-titular.jpg);
+}
+
+.fixture{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 50px;
+}
+
+@media(min-width:768px){
+    .fixture-img{
+        display: flex;
+        gap: 30px;
+    }
+}
 
  /* Cancionero */
  .cancion{
