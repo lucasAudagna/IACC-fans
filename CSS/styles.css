@@ -262,11 +262,13 @@ justify-content: flex-start;
  .cancion p{
     text-align: center;
     width: 300px;
-    padding: 50px;
+    margin: 25px;
+    padding: 25px;
  }
 
  .cancion h3{
     margin-top: 50px;
+    text-align: center;
  }
 
  .cancion iframe{
@@ -275,7 +277,7 @@ justify-content: flex-start;
  }
  
  @media(min-width: 768px){
-    .cancio p{
+    .cancion p{
         width: 350px;
     }
     .cancion iframe{
@@ -373,6 +375,7 @@ justify-content: flex-start;
 }
 .submenu a{
     color: black;
+    font-weight: 700;
     background-color: rgba(132, 137, 74,0.9);
     padding: 5px 5px;
     border-radius: 5px;
@@ -381,7 +384,7 @@ justify-content: flex-start;
 @media(min-width: 768px){
     .submenu{
         flex-direction: row;
-        justify-content: space-evenly;
+        gap: 45px;
     }
 
 }
