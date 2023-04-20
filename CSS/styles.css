@@ -357,9 +357,8 @@ justify-content: flex-start;
 /* Contacto */
 
     form{
-        margin: 25px;
+        font-family: 'Raleway', sans-serif;
     }
-
 /* Plantel */
 .img-tres{
     background-image: url(../img/escudo3.jfif);

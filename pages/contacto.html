@@ -35,36 +35,44 @@
 
     <section>
             <h1>Contacto</h1>
-            <h3>Ponete en contacto con nosotros!</h3>        
+            <h3 class="text-center">¡Ponete en contacto con nosotros!</h3>        
             <div class="container">
                 <form action="" class="row">
-                    <div class="col-sm-3 col-md-6">
-                        <label for="Nombre">Nombre y apellido</label>
+                    <div class="col-sm-6 col-md-6">
+                        <label for="Nombre">Nombre y apellido</label> <br>
                         <input type="text" id="Nombre" placeholder="Nombre completo" required="">
                     </div>
                     
-                    <div class="col-sm-3 col-md-6">
-                        <label for="dni">DNI</label>
-                        <input type="number" id="dni" placeholder="Numero de documento" required="">
+                    <div class="col-sm-6 col-md-6">
+                        <label for="dni">DNI</label> <br>
+                        <input type="number" id="dni" placeholder="N° de documento" required="">
                     </div>
                     
-                    <div class="col-sm-3 col-md-6">
-                        <label for="correo">Correo electrónico</label>
+                    <div class="col-sm-6 col-md-6">
+                        <label for="correo">Correo electrónico</label> <br>
                         <input type="email" id="correo" placeholder="Ingresa tu email" required="">
                     </div>
 
-                    <div class="col-sm-3 col-md-6">
-                        <label for="telefono">Número de teléfono</label>
+                    <div class="col-sm-6 col-md-6">
+                        <label for="telefono">Número de teléfono</label> <br>
                         <input type="tel" id="telefono" placeholder="Ingresa tu telefono" required="">
                     </div>
         
                     <div class="col-sm-12 col-md-12">
-                        <label for="mensaje">Dejanos tu mensaje</label>
+                        <label for="mensaje">Dejanos tu mensaje</label> <br>
                         <textarea id="mensaje" cols="30" rows="10" style="width: 520px; height: 258px;"></textarea>
                     </div>
         
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Vaciar">
+                    <input type="submit" value="Enviar" class="col-sm-6 col-md-6">
+                    <input type="reset" value="Vaciar" class="col-sm-6 col-md-6">
+
+                </form>
+                <form action="" class="row">
+                    <h3 class="text-center">¡Compartinos tu imagen gloriosa!</h3>
+                    <label for="imagen" class="font-weight-bold">Subi tu foto</label><br>
+                    <input type="file" id="imagen" required="" class="col-md-12 col-sm-12"><br><br>
+                    <input type="submit" value="Subir" class="col-sm-6 col-md-6 col-lg-6">
+                    <input type="reset" value="Vaciar" class="col-sm-6 col-md-6 col-lg-6">
                 </form>
             </div>
     </section>
