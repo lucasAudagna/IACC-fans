@@ -1,0 +1,71 @@
+ /*Header */
+ header{
+    /* background-image:url(../img/el-unico-club-de-la-ciudad-2.jpg); */
+    background-color: rgb(255, 0, 43);
+    height: 245px;
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    gap: 20px;
+ }
+
+ nav{
+    background-color: rgba(0, 0, 0,0.4);
+ }
+
+.orden1{
+    order:1;
+}
+
+ .menu{
+    /* border-radius: 5px; */
+    /* background-color: rgba(84, 84, 84, 0.853) ; */
+    margin: 20px;
+    padding: 0px 10px;
+ }
+
+.menuB{
+margin: 15px 10px;
+padding: 0px;
+align-items:flex-start;
+justify-content: flex-start;
+}
+
+ .menuB a:hover{
+    color: gold;
+ }
+
+ @media (min-width: 768px){
+    header{
+        height: 250px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .orden1{
+        order:0;
+    }
+    ul, li, a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+    }
+    .menu{
+        margin: 10px 10px 21px 0px;
+        padding: 0px 10px;
+    }
+    .menuB{
+        margin:10px 10px 0px 0px;
+    }
+ }
+
+
+ @media (min-width: 992px ){
+    ul, li, a {
+        gap: 150px;
+    }
+ }
