@@ -2,4 +2,16 @@
 
 form{
     font-family: 'Raleway', sans-serif;
+    row-gap: 10px;
+    label{
+        font-weight: 700;
+    }
+    .boton{
+        background-color: rgba(132, 137, 74,0.9);
+        transition: ease-in .2s;
+        &:hover{
+            color: gold;
+            font-weight: 700;
+        }
+    }
 }

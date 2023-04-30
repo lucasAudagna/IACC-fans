@@ -98,19 +98,12 @@ header {
   gap: 20px;
 }
 
-nav {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
 .orden1 {
   order: 1;
 }
 
-.menu {
-  /* border-radius: 5px; */
-  /* background-color: rgba(84, 84, 84, 0.853) ; */
-  margin: 20px;
-  padding: 0px 10px;
+nav {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .menuB {
@@ -119,9 +112,15 @@ nav {
   align-items: flex-start;
   justify-content: flex-start;
 }
-
+.menuB .active {
+  color: gold;
+}
+.menuB a {
+  transition: ease-in 0.2s;
+}
 .menuB a:hover {
   color: gold;
+  font-weight: 300;
 }
 
 @media (min-width: 768px) {
@@ -140,10 +139,6 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 90px;
-  }
-  .menu {
-    margin: 10px 10px 21px 0px;
-    padding: 0px 10px;
   }
   .menuB {
     margin: 10px 10px 0px 0px;
@@ -249,7 +244,6 @@ nav {
   flex-direction: column;
   gap: 20px;
 }
-
 .submenu a {
   color: black;
   font-weight: 700;
@@ -257,6 +251,13 @@ nav {
   padding: 5px 5px;
   border-radius: 5px;
   gap: 10px;
+}
+.submenu a {
+  transition: ease-in 0.2s;
+}
+.submenu a:hover {
+  color: gold;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -359,6 +360,18 @@ nav {
 /* Contacto */
 form {
   font-family: "Raleway", sans-serif;
+  row-gap: 10px;
+}
+form label {
+  font-weight: 700;
+}
+form .boton {
+  background-color: rgba(132, 137, 74, 0.9);
+  transition: ease-in 0.2s;
+}
+form .boton:hover {
+  color: gold;
+  font-weight: 700;
 }
 
 /* Footer */
@@ -372,6 +385,16 @@ footer .redes {
   justify-content: center;
   gap: 20px;
   font-size: 20px;
+}
+footer .redes a:hover {
+  color: gold;
+  font-size: 25px;
+  transition: ease-in 0.1s;
+}
+footer h6 a:hover {
+  color: gold;
+  font-weight: 700;
+  transition: ease-in 0.2s;
 }
 
 /*# sourceMappingURL=styles.css.map */

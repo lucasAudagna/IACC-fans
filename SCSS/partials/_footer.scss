@@ -8,5 +8,17 @@ footer {
         justify-content: center ;
         gap: 20px;
         font-size: 20px;
+        a:hover{
+            color: gold;
+            font-size: 25px;
+            transition: ease-in .1s;
+        }
       }
-  }
+    h6{
+        a:hover{
+            color: gold;
+            font-weight: 700;
+            transition: ease-in .2s;
+        }
+    }
+}

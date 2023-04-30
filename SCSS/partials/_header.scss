@@ -10,32 +10,30 @@
     align-items:center;
     gap: 20px;
  }
+ .orden1{
+    order:1;
+}
 
  nav{
     background-color: rgba(0, 0, 0,0.4);
  }
 
-.orden1{
-    order:1;
-}
-
- .menu{
-    /* border-radius: 5px; */
-    /* background-color: rgba(84, 84, 84, 0.853) ; */
-    margin: 20px;
-    padding: 0px 10px;
- }
-
 .menuB{
-margin: 15px 10px;
-padding: 0px;
-align-items:flex-start;
-justify-content: flex-start;
-}
-
- .menuB a:hover{
+    margin: 15px 10px;
+    padding: 0px;
+    align-items:flex-start;
+    justify-content: flex-start;
+    .active{
+        color: gold;
+    }
+    a{
+        transition: ease-in .2s;
+    }
+    a:hover{
     color: gold;
- }
+    font-weight: 300;
+    }
+}
 
  @media (min-width: 768px){
     header{
@@ -53,10 +51,6 @@ justify-content: flex-start;
         justify-content: center;
         align-items: center;
         gap: 90px;
-    }
-    .menu{
-        margin: 10px 10px 21px 0px;
-        padding: 0px 10px;
     }
     .menuB{
         margin:10px 10px 0px 0px;
