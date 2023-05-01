@@ -19,18 +19,42 @@
         gap: 10px;
     }
     a{
-        transition: ease-in .2s;
+        transition: ease-in .15s;
     }
     a:hover{
         color: gold;
         font-weight: 500;
     }
 }
-
 @media(min-width: 768px){
     .submenu{
         flex-direction: row;
         gap: 45px;
     }
 
+}
+.capa{
+    .textoP{
+        opacity: 0;
+        color: black;
+        font-weight: 700;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        position: absolute;
+    }
+    &:hover{
+        img{
+            transition: ease-in .15s;
+            opacity: 0.4;
+        }
+        .textoP{
+            transition: ease-in .2s;
+            opacity: 1;
+            }
+    }
+}
+.imgP{
+    position: relative;
 }

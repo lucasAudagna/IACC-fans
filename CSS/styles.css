@@ -253,7 +253,7 @@ nav {
   gap: 10px;
 }
 .submenu a {
-  transition: ease-in 0.2s;
+  transition: ease-in 0.15s;
 }
 .submenu a:hover {
   color: gold;
@@ -266,6 +266,29 @@ nav {
     gap: 45px;
   }
 }
+.capa .textoP {
+  opacity: 0;
+  color: black;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: absolute;
+}
+.capa:hover img {
+  transition: ease-in 0.15s;
+  opacity: 0.4;
+}
+.capa:hover .textoP {
+  transition: ease-in 0.2s;
+  opacity: 1;
+}
+
+.imgP {
+  position: relative;
+}
+
 /* Cancionero */
 .cancion {
   display: flex;
